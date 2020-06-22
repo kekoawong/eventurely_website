@@ -1,10 +1,10 @@
+/*
 function get_data() {
     if (sessionStorage.getItem("data") === null) {
         fetch('https://docs.google.com/spreadsheets/d/1Zau7lllYN6Rvu1V_Ge0Hci4SPqlOvIT-Evi17tOT-SM/edit#gid=0')
             .then(function (response) {
                 return response.text();
             }).then(function (text) {
-            /*sessionStorage.setItem("data", text);*/
             let parser = new DOMParser();
             let doc = parser.parseFromString(text, "text/html");
             let table = doc.getElementById("0-grid-table-container").querySelector("tbody");
@@ -35,15 +35,17 @@ function get_data() {
         });
     }
 }
+*/
 
-get_data();
+function get_data(number) {
+    return new Promise((resolve, reject) => {
+        if (number > 2) {
+            resolve('success');
+        }
+        else {
+            reject('nope');
+        }
+    })
+}
 
-/*
-                    .getElementsByTagName("tr");*/
-/*                    .querySelectorAll("tr");
-
-                table.forEach(function (value) {
-                    text = value.querySelectorAll("td");
-                    console.log(text[5].textContent);
-                })
-            });*/
+get_data(234);
