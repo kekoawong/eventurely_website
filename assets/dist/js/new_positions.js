@@ -6,11 +6,17 @@ function add_position_element(position, location, description) {
 }
 
 window.onload = setTimeout(function () {
-        // load data
-        let data = JSON.parse(sessionStorage.getItem("data"));
-        let positions = data[0];
-        for (let i = 0; i < positions.length; i++) {
-            let p = positions[i];
-            add_position_element(p[0], p[1], p[2]);
+
+        // load data if it session storage item exists
+        if (sessionStorage.getItem("data")){
+            let data = JSON.parse(sessionStorage.getItem("data"));
+            let positions = data[0];
+            for (let i = 0; i < positions.length; i++) {
+                let p = positions[i];
+                add_position_element(p[0], p[1], p[2]);
+            }
         }
+
+        // fetch it if it does not exist
+        
     }, 1000);
