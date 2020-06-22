@@ -9,12 +9,29 @@ function create_blog_post(title, date, content, blog_number) {
     document.getElementById('blog').appendChild(blog);
 }
 
-window.onload = setTimeout(function () {
-    // load data
-    let data = JSON.parse(sessionStorage.getItem("data"));
-    let updates = data[1];
-    for (let i = 0; i < updates.length; i++) {
-        let update = updates[i];
-        create_blog_post(update[0], update[1], update[2], i);
+function fetch_blogs() {
+
+    // load data if it session storage item exists
+    if (sessionStorage.getItem("data")) {
+        let data = JSON.parse(sessionStorage.getItem("data"));
+        let updates = data[1];
+        for (let i = 0; i < updates.length; i++) {
+            let update = updates[i];
+            create_blog_post(update[0], update[1], update[2], i);
+        }
     }
-}, 1000);
+
+    // fetch it if it does not exist
+    else {
+        let data = get_data();
+        data.then((stuff) => {
+            let updates = stuff[1];
+            for (let i = 0; i < updates.length; i++) {
+                let update = updates[i];
+                create_blog_post(update[0], update[1], update[2], i);
+            }
+        })
+    }
+}
+
+window.onload = setTimeout(fetch_blogs(), 100);
