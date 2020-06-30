@@ -9,19 +9,6 @@
     width: 100%;
 }
 
-@media (min-width:641px) { /* tablets in portrait*/
-    .marketing-content {
-        width: 100%;
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-    .side-container {
-        order: 1;
-        width: 35%;
-        padding-bottom: 0;
-    }
-}
-
 .side-container {
     order: 1;
     width: 35%;
