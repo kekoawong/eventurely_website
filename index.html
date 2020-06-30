@@ -1,47 +1,50 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v4.0.1">
-    <link rel="icon" href="assets/images/e-logo.png">
-    <title>Eventurely</title>
 
-    <!--<link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Eventurely">
+  <meta name="generator" content="Jekyll v4.0.1">
+  <link rel="icon" href="assets/images/e-logo.png">
+  <title>Eventurely</title>
 
-    <!-- Bootstrap core CSS -->
-<link href="assets/dist/css/bootstrap.css" rel="stylesheet">
+  <!--<link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">-->
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
+  <!-- Bootstrap core CSS -->
+  <link href="assets/dist/css/bootstrap.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
       }
+    }
+  </style>
+  <!-- Custom styles for this template -->
+  <link href="assets/dist/custom_css/carousel.css" rel="stylesheet">
+  <link href="assets/dist/custom_css/custom.css" rel="stylesheet">
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-    <!-- Custom styles for this template -->
-    <link href="assets/dist/custom_css/carousel.css" rel="stylesheet">
-    <link href="assets/dist/custom_css/custom.css" rel="stylesheet">
+  <!--Load data-->
+  <script src="assets/dist/js/get_data.js"></script>
+</head>
 
-      <!--Load data-->
-      <script src="assets/dist/js/get_data.js"></script>
-  </head>
-  <body>
+<body>
   <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top navy-background">
-      <a class="navbar-brand brush-font pad-left" href="index.html">Eventurely</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand brush-font" href="index.html">Eventurely</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse flex-align-left" id="navbarCollapse">
@@ -60,64 +63,69 @@
         </form>-->
       </div>
     </nav>
-</header>
+  </header>
 
-<main role="main">
+  <main role="main">
 
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <svg class="bd-placeholder-img svg-center contain-image1" width="100vw" height="100vh" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"></svg>
-        <div class="container">
-          <div class="carousel-caption text-border">
-            <h1>All Events. On One Device.</h1>
-            <p>Serving individuals and organizations with a unified scheduling and calendar app.</p>
-            <p><a class="btn btn-lg btn-primary" href="#app-features" role="button">Learn More</a></p>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <svg class="bd-placeholder-img svg-center contain-image1" width="100vw" height="100vh"
+            xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"></svg>
+          <div class="container">
+            <div class="carousel-caption text-border">
+              <h1>All Events. On One Device.</h1>
+              <p>Serving individuals and organizations with a unified scheduling and calendar app.</p>
+              <p><a class="btn btn-lg btn-primary" href="#app-features" role="button">Learn More</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img svg-center contain-image2" width="100vw" height="100vh"
+            xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"></svg>
+          <div class="container">
+            <div class="carousel-caption text-border">
+              <h1>Get the word out.</h1>
+              <p>Have events that you want your community to know about? We can help.</p>
+              <p><a class="btn btn-lg btn-primary" href="contact.html" role="button">Contact Us</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img svg-center contain-image3" width="100vw" height="100vh"
+            xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"></svg>
+          <div class="container">
+            <div class="carousel-caption text-border">
+              <h1>Built with a community-centered vision.</h1>
+              <p>We wanted to create a product that would help a community because we are a part of it.</p>
+              <p><a class="btn btn-lg btn-primary" href="about_us.html" role="button">Who We Are</a></p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img svg-center contain-image2" width="100vw" height="100vh" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"></svg>
-        <div class="container">
-          <div class="carousel-caption text-border">
-            <h1>Get the word out.</h1>
-            <p>Have events that you want your community to know about? We can help.</p>
-            <p><a class="btn btn-lg btn-primary" href="contact.html" role="button">Contact Us</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img svg-center contain-image3" width="100vw" height="100vh" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"></svg>
-        <div class="container">
-          <div class="carousel-caption text-border">
-            <h1>Built with a community-centered vision.</h1>
-            <p>We wanted to create a product that would help a community because we are a part of it.</p>
-            <p><a class="btn btn-lg btn-primary" href="about_us.html" role="button">Who We Are</a></p>
-          </div>
-        </div>
-      </div>
+      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
-    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
 
     <div class="main-content">
-        <div class="side-container">
-            <div class="updates-blog">
-                <div class="blog-title"><h1>Updates</h1></div>
-                <div class="scrolling-wrapper" id="blog">
-                    <!--          <div class="blog-card mb-3 blog-card-grey">
+      <div class="side-container">
+        <div class="updates-blog">
+          <div class="blog-title">
+            <h1>Updates</h1>
+          </div>
+          <div class="scrolling-wrapper" id="blog">
+            <!--          <div class="blog-card mb-3 blog-card-grey">
                                   <div class="card-inline">
                                       <div class="card-header">Header</div>
                                       <div class="card-body">
@@ -126,108 +134,118 @@
                                       </div>
                                   </div>
                               </div>-->
-                </div>
-            </div>
-
+          </div>
         </div>
-        <div class="marketing-content">
+
+      </div>
+      <div class="marketing-content">
 
 
-          <!-- Marketing messaging and featurettes
+        <!-- Marketing messaging and featurettes
           ================================================== -->
-          <!-- Wrap the rest of the page in another container to center all the content. -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
 
-          <div class="container marketing">
+        <div class="container marketing">
 
-            <!-- START THE FEATURETTES -->
+          <!-- START THE FEATURETTES -->
 
-            <div class="row featurette">
-              <div class="col-md-7">
-                <h2 class="featurette-heading">Home Screen personalizing every user's experience</h2>
-                <p class="lead">Log in and events will be catered to their interests</p>
-              </div>
-              <div class="col-md-5">
-                  <div class="iphone-body">
-                      <div class="iphone">
-                          <div class="screen"></div>
-                          <div class="home iphone-button" title="Home"></div>
-                          <span class="speaker" title="Speaker"></span>
-                          <span class="camera" title="Camera"></span>
-                          <span class="proximity" title="Proximity Sensor"></span>
-
-                          <div class="silence iphone-button" title="Silence Switch"></div>
-                          <div class="volume-up iphone-button" title="Volume Up"></div>
-                          <div class="volume-down iphone-button" title="Volume Down"></div>
-                          <div class="sleep iphone-button" title="Sleep"></div>
-                      </div>
-                  </div>
-              </div>
+          <div class="row featurette">
+            <div class="col-md-5">
+              <h2 class="featurette-heading">Personalize your experience</h2>
+              <p class="lead">Log in and events will be catered to your interests</p>
             </div>
+            <div class="col-md-7">
+              <div class="iphone-body">
+                <div class="iphone">
+                  <div class="screen"></div>
+                  <div class="home iphone-button" title="Home"></div>
+                  <span class="speaker" title="Speaker"></span>
+                  <span class="camera" title="Camera"></span>
+                  <span class="proximity" title="Proximity Sensor"></span>
 
-            <hr class="featurette-divider">
-
-            <div class="row featurette">
-              <div class="col-md-7 order-md-2">
-                <h2 class="featurette-heading">View your calendar to see your schedule</h2>
-                <p class="lead">Allowing individuals to prioritize and make the most out of their time.</p>
-              </div>
-              <div class="col-md-5 order-md-1">
-                  <div class="iphone-body">
-                      <div class="iphone">
-                          <div class="screen"></div>
-                          <div class="home iphone-button" title="Home"></div>
-                          <span class="speaker" title="Speaker"></span>
-                          <span class="camera" title="Camera"></span>
-                          <span class="proximity" title="Proximity Sensor"></span>
-
-                          <div class="silence iphone-button" title="Silence Switch"></div>
-                          <div class="volume-up iphone-button" title="Volume Up"></div>
-                          <div class="volume-down iphone-button" title="Volume Down"></div>
-                          <div class="sleep iphone-button" title="Sleep"></div>
-                      </div>
-                  </div>
-              </div>
-            </div>
-
-            <hr class="featurette-divider">
-
-            <div class="row featurette">
-              <div class="col-md-7">
-                <h2 class="featurette-heading">Organizations marketing their content spreading the word.</h2>
-                <p class="lead">Allowing for content to reach those who would be most interested in it.</p>
-              </div>
-                <div class="col-md-5 order-md-1">
-                    <div class="iphone-body">
-                        <div class="iphone">
-                            <div class="screen"></div>
-                            <div class="home iphone-button" title="Home"></div>
-                            <span class="speaker" title="Speaker"></span>
-                            <span class="camera" title="Camera"></span>
-                            <span class="proximity" title="Proximity Sensor"></span>
-
-                            <div class="silence iphone-button" title="Silence Switch"></div>
-                            <div class="volume-up iphone-button" title="Volume Up"></div>
-                            <div class="volume-down iphone-button" title="Volume Down"></div>
-                            <div class="sleep iphone-button" title="Sleep"></div>
-                        </div>
-                    </div>
+                  <div class="silence iphone-button" title="Silence Switch"></div>
+                  <div class="volume-up iphone-button" title="Volume Up"></div>
+                  <div class="volume-down iphone-button" title="Volume Down"></div>
+                  <div class="sleep iphone-button" title="Sleep"></div>
                 </div>
+              </div>
             </div>
+          </div>
 
-            <!-- /END THE FEATURETTES -->
+          <hr class="featurette-divider">
 
-          </div><!-- /.container -->
-        </div><!--marketing-container-->
-    </div><!--full-page container-->
+          <div class="row featurette">
+            <div class="col-md-5 order-md-2">
+              <h2 class="featurette-heading">View your calendar</h2>
+              <p class="lead">Allowing individuals to prioritize and make the most out of their time.</p>
+            </div>
+            <div class="col-md-7 order-md-1">
+              <div class="iphone-body">
+                <div class="iphone">
+                  <div class="screen"></div>
+                  <div class="home iphone-button" title="Home"></div>
+                  <span class="speaker" title="Speaker"></span>
+                  <span class="camera" title="Camera"></span>
+                  <span class="proximity" title="Proximity Sensor"></span>
+
+                  <div class="silence iphone-button" title="Silence Switch"></div>
+                  <div class="volume-up iphone-button" title="Volume Up"></div>
+                  <div class="volume-down iphone-button" title="Volume Down"></div>
+                  <div class="sleep iphone-button" title="Sleep"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="featurette-divider">
+
+          <div class="row featurette">
+            <div class="col-md-5">
+              <h2 class="featurette-heading">Spread the word.</h2>
+              <p class="lead">Allowing for content to reach those who would be most interested in it.</p>
+            </div>
+            <div class="col-md-7 order-md-1">
+              <div class="iphone-body">
+                <div class="iphone">
+                  <div class="screen"></div>
+                  <div class="home iphone-button" title="Home"></div>
+                  <span class="speaker" title="Speaker"></span>
+                  <span class="camera" title="Camera"></span>
+                  <span class="proximity" title="Proximity Sensor"></span>
+
+                  <div class="silence iphone-button" title="Silence Switch"></div>
+                  <div class="volume-up iphone-button" title="Volume Up"></div>
+                  <div class="volume-down iphone-button" title="Volume Down"></div>
+                  <div class="sleep iphone-button" title="Sleep"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- /END THE FEATURETTES -->
+
+        </div><!-- /.container -->
+      </div>
+      <!--marketing-container-->
+    </div>
+    <!--full-page container-->
     <hr class="featurette-divider margins-sides">
 
     <script src="assets/dist/js/new_blog.js"></script>
     <!-- FOOTER -->
     <footer class="container">
-        <p class="float-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2020 Eventurely. <!--<a href="#">Administrator</a>--><!-- &middot; <a href="#">Terms</a>--></p>
+      <p class="float-right"><a href="#">Back to top</a></p>
+      <p>&copy; 2020 Eventurely.
+        <!--<a href="#">Administrator</a>-->
+        <!-- &middot; <a href="#">Terms</a>-->
+      </p>
     </footer>
-</main>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="assets/dist/js/bootstrap.bundle.js"></script></body>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
+  <script src="assets/dist/js/bootstrap.bundle.js"></script>
+</body>
+
 </html>
