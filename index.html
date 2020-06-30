@@ -119,13 +119,14 @@
     </div>
 
     <div class="main-content">
-      <div class="side-container">
-        <div class="updates-blog">
-          <div class="blog-title">
-            <h1>Updates</h1>
-          </div>
-          <div class="scrolling-wrapper" id="blog">
-            <!--          <div class="blog-card mb-3 blog-card-grey">
+        <div class="side-container">
+            <div class="updates-blog">
+                <div class="blog-title"><h1>Updates</h1></div>
+                <div class="scrolling-wrapper" id="instafeed">
+
+                </div>
+                <!-- <div class="scrolling-wrapper" id="blog">
+                             <div class="blog-card mb-3 blog-card-grey">
                                   <div class="card-inline">
                                       <div class="card-header">Header</div>
                                       <div class="card-body">
@@ -133,11 +134,11 @@
                                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                       </div>
                                   </div>
-                              </div>-->
-          </div>
-        </div>
+                              </div>
+                </div> -->
+            </div>
 
-      </div>
+        </div>
       <div class="marketing-content">
 
 
@@ -231,6 +232,13 @@
     <!--full-page container-->
     <hr class="featurette-divider margins-sides">
 
+    <!-- The Token Agent service - make sure to use your own URL here -->
+    <script src='https://eventurely-token-refresh.herokuapp.com/token.js'></script>
+
+    <!-- The Instafeed.js library (Don't use this URL in production!) -->
+    <script src="assets/dist/js/instafeed.min.js"></script>
+    <script src="assets/dist/js/insta_post.js"></script>
+    <script src="assets/dist/js/resize_captions.js"></script>
     <script src="assets/dist/js/new_blog.js"></script>
     <!-- FOOTER -->
     <footer class="container">
