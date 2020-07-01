@@ -15,6 +15,56 @@
     padding-bottom: 0;
 }
 
+.insta-logo {
+    height: 3rem;
+    width: auto;
+    padding-right: 3px;
+}
+
+.insta-profile {
+    font-weight: bold;
+    font-size: .9rem;
+    padding-right: 8px;
+}
+
+.insta-header {
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.insta-links {
+    display: flex;
+    width: 95%;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.insta-links:hover {
+    outline: black;
+}
+
+.insta-caption {
+    text-overflow: ellipsis;
+    font-size: .9rem;
+    margin: 1rem;
+    color: black;
+}
+
+.insta-caption:hover {
+    text-emphasis: none;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
 .marketing-content {
     width: 65%;
     padding-left: 2rem;
@@ -294,6 +344,7 @@ html {
     overflow-x: hidden;
     overflow-x: -moz-hidden-unscrollable;
     overflow-y: scroll;
+    justify-content: center;
     height: 80vh;
     width: 100%;
     -webkit-overflow-scrolling: touch;
