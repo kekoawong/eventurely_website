@@ -5,7 +5,7 @@ var feed = new Instafeed({
       item.date = [d.getDate(), d.getMonth(), d.getYear()].join('/');
       return item;
     },
-    template: `<a title="Visit Post" class="insta-links" href="{{link}}"><img title="Visit Post" src="{{image}}"/><div class="insta-caption"><p><span class="insta-profile">{{model.username}}</span>{{model.caption}}</p></div></a>`
+    template: `<a title="Visit Post" class="insta-links" href="{{link}}"><div><img class="insta-image" title="Visit Post" src="{{image}}"/></div><div class="insta-caption"><p><span class="insta-profile">{{model.username}}</span>{{model.caption}}</p><hr class="insta-post-divider"></div></a>`
   });
   
 feed.run();

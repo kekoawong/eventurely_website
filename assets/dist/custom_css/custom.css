@@ -37,18 +37,37 @@
 .insta-links {
     display: flex;
     width: 95%;
+    max-width: 100%;
+    object-fit: contain;
     flex-wrap: wrap;
     align-content: center;
+    height: auto;
 }
 
 .insta-links:hover {
     outline: black;
 }
 
+.insta-image {
+    width: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    height: auto;
+}
+
+.insta-post-divider {
+    width: 75%;
+    border-top: solid;
+    border-color: darkgray;
+    border-width: thin;
+}
+
 .insta-caption {
     text-overflow: ellipsis;
     font-size: .9rem;
-    margin: 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     color: black;
 }
 
