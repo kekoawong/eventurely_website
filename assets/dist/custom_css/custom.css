@@ -113,6 +113,48 @@ a:active {
     padding-left: 2rem;
 }
 
+.privacy-policy {
+    top: 15vh;
+    padding: 2rem;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pp-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+}
+
+.pp-words {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-left: 8vw;
+    padding-right: 8vw;
+    font-size: 1.3rem;
+}
+
+.pp-bullets {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20vw;
+    font-size: 1.2rem;
+}
+
+.pp-text {
+    font-size: 1.3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .pad-left {
     padding-left: 4rem;
 }

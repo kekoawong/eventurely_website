@@ -58,6 +58,7 @@ function get_data() {
     
                     let position = [objCells[0].innerText, objCells[1].innerText, objCells[2].innerText];
                     let update = [objCells[3].innerText, objCells[4].innerText, objCells[5].innerText];
+                    console.log(objCells[5]);
     
                     // append to positions if name exists
                     if (position[0]) {
