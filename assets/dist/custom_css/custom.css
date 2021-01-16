@@ -1,3 +1,9 @@
+/* Menco Thin font-family: menco, sans-serif; font-weight: 100; font-style: normal; Menco Thin Italic font-family: menco, sans-serif; font-weight: 100; font-style: italic; Menco Light font-family: menco, sans-serif; font-weight: 300; font-style: normal; Menco Light Italic font-family: menco, sans-serif; font-weight: 300; font-style: italic; Menco Medium font-family: menco, sans-serif; font-weight: 500; font-style: normal; Menco Medium Italic font-family: menco, sans-serif; font-weight: 500; font-style: italic; Menco Bold font-family: menco, sans-serif; font-weight: 700; font-style: normal; Menco Bold Italic font-family: menco, sans-serif; font-weight: 700; font-style: italic; Menco Black font-family: menco, sans-serif; font-weight: 900; font-style: normal; Menco Black Italic font-family: menco, sans-serif; font-weight: 900; font-style: italic;  */
+/* #5DDCE2 #ACB1F8 #0B233F #545454 #D6D6D6  */
+
+p {
+    font-family: Menco, sans-serif;
+}
 .flex-align-left {
     display: flex;
     justify-content: flex-end;
