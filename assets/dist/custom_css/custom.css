@@ -1,7 +1,26 @@
 /* #5DDCE2 #ACB1F8 #0B233F #545454 #D6D6D6  */
+:root {
+    --lightblue: #5DDCE2;
+    --lightpurple: #ACB1F8;
+    --black: #0B233F;
+    --darkgray: #545454;
+    --darkblue: #1A3556;
+    --offwhite: #F4F4F4;
+    --gray: #888888;
+    --white: #FFFFFF;
+}
 
 html {
     font-family: Menco, sans-serif;
+}
+
+body {
+    background-color: var(--darkblue);
+    color: var(--offwhite);
+}
+
+.featurette p {
+    font-size: 1.5rem;
 }
 
 .header-logo {
@@ -287,8 +306,16 @@ html {
 }
 
 .navy-button {
-    background-color: #0c2340;
-    border-color: #0c2340;
+    background-color: var(--darkblue);
+    border: none;
+}
+
+.navy-button:hover {
+    background-color: var(--lightpurple);
+}
+
+.btn-secondary:hover {
+    background-color: var(--lightpurple);
 }
 
 .link-icon {
@@ -360,21 +387,23 @@ html {
 }
 
 .contain-image1 {
-    background: url(../../images/on_phone.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/on_phone.jpg);
     background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
+    background-color: rgba(255, 255, 255, 0.2);
+
 }
 .contain-image2 {
-    background: url(../../images/crowd_conference.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/crowd_conference.jpg);
     background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
 }
 .contain-image3 {
-    background: url(../../images/notre_dame.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/notre_dame.jpg);
     background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
@@ -699,3 +728,23 @@ html {
     right: -0.75vh;
 }
 
+.image-holder img {
+    width: 100%;
+}
+
+.navbar-nav .nav-link {
+    color: var(--offwhite) !important;
+}
+
+.carousel-caption a {
+    background-color: var(--darkblue);
+    border: none;
+}
+
+.carousel-caption a:hover {
+    background-color: var(--lightpurple);
+}
+
+footer a {
+    color: var(--lightblue);
+}
