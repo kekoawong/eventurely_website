@@ -748,3 +748,34 @@ html {
 footer a {
     color: var(--lightblue);
 }
+
+iframe {
+    width: 100%; 
+    height: 39.37vw; /* 100/56.25 = 560/315 = 1.778 */
+}
+
+.featurette object {
+    width: 100%;
+    height: 90vh;
+}
+
+.featurette object a {
+    color: var(--lightblue);
+    font-size: 1.5rem;
+}
+
+.aspect-ratio {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* The height of the item will now be 56.25% of the width. */
+}
+  
+  /* Adjust the iframe so it's rendered in the outer-width and outer-height of it's parent */
+.aspect-ratio iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
