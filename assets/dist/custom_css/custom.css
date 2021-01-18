@@ -747,12 +747,28 @@ html {
     right: -0.75vh;
 }
 
+li {
+    text-align: center;
+}
 .image-holder img {
     width: 100%;
 }
 
 .navbar-nav .nav-link {
     color: var(--offwhite) !important;
+}
+
+.navbar-nav .btn-primary {
+    background-color: var(--lightpurple);
+    color: var(--darkblue) !important;
+    border: none;
+    border-radius: 1rem;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.navbar-nav .btn-primary:active {
+    background-color: var(--lightpurple) !important;
 }
 
 .carousel-caption a {
