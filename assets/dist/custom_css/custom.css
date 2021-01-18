@@ -1,3 +1,61 @@
+/* #5DDCE2 #ACB1F8 #0B233F #545454 #D6D6D6  */
+:root {
+    --lightblue: #5DDCE2;
+    --lightpurple: #ACB1F8;
+    --black: #0B233F;
+    --darkgray: #545454;
+    --darkblue: #1A3556;
+    --offwhite: #F4F4F4;
+    --gray: #888888;
+    --white: #FFFFFF;
+}
+
+.download-button {
+    background-color: var(--lightpurple);
+    color: var(--darkblue) !important;
+    border: none;
+    border-radius: 1rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 3px;
+}
+
+hr {
+    border-top: 1px solid var(--offwhite);
+}
+
+.color-links {
+    color: var(--lightblue);
+}
+
+.table-positions {
+    background-color: var(--darkblue);
+}
+
+.table-top {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: inherit;
+    background-color: inherit;
+}
+
+html {
+    font-family: Menco, sans-serif;
+}
+
+body {
+    background-color: var(--darkblue);
+    color: var(--offwhite);
+}
+
+.featurette p {
+    font-size: 1.5rem;
+}
+
+.header-logo {
+    max-height: 4rem;
+}
+
 .flex-align-left {
     display: flex;
     justify-content: flex-end;
@@ -85,7 +143,7 @@ a:active {
 }
 
 .marketing-content {
-    width: 65%;
+    width: 100%;
     padding-left: 2rem;
     padding-right: 2rem;
 }
@@ -208,7 +266,6 @@ a:active {
 }
 
 .brush-font {
-    font-family: "Brush Script MT";
     font-size: 2.5em;
     padding-bottom: 0;
     padding-top: 0;
@@ -278,8 +335,16 @@ html {
 }
 
 .navy-button {
-    background-color: #0c2340;
-    border-color: #0c2340;
+    background-color: var(--darkblue);
+    border: none;
+}
+
+.navy-button:hover {
+    background-color: var(--lightpurple);
+}
+
+.btn-secondary:hover {
+    background-color: var(--lightpurple);
 }
 
 .link-icon {
@@ -351,21 +416,23 @@ html {
 }
 
 .contain-image1 {
-    background: url(../../images/on_phone.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/on_phone.jpg);
     background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
+    background-color: rgba(255, 255, 255, 0.2);
+
 }
 .contain-image2 {
-    background: url(../../images/crowd_conference.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/crowd_conference.jpg);
     background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
 }
 .contain-image3 {
-    background: url(../../images/notre_dame.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/notre_dame.jpg);
     background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
@@ -486,7 +553,7 @@ html {
     height: 80vh;
 }
 .screen {
-    background: url(../../images/cardImg.jpeg);
+    background: url('/assets/images/screenshots/exploreScreen.png');
     background-size: cover;
     display: flex;
     flex-wrap: wrap;
@@ -690,3 +757,70 @@ html {
     right: -0.75vh;
 }
 
+li {
+    text-align: center;
+}
+.image-holder img {
+    width: 100%;
+}
+
+.navbar-nav .nav-link {
+    color: var(--offwhite) !important;
+}
+
+.navbar-nav .btn-primary {
+    background-color: var(--lightpurple);
+    color: var(--darkblue) !important;
+    border: none;
+    border-radius: 1rem;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.navbar-nav .btn-primary:active {
+    background-color: var(--lightpurple) !important;
+}
+
+.carousel-caption a {
+    background-color: var(--darkblue);
+    border: none;
+}
+
+.carousel-caption a:hover {
+    background-color: var(--lightpurple);
+}
+
+footer a {
+    color: var(--lightblue);
+}
+
+iframe {
+    width: 100%; 
+    height: 39.37vw; /* 100/56.25 = 560/315 = 1.778 */
+}
+
+.featurette object {
+    width: 100%;
+    height: 90vh;
+}
+
+.featurette object a {
+    color: var(--lightblue);
+    font-size: 1.5rem;
+}
+
+.aspect-ratio {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* The height of the item will now be 56.25% of the width. */
+}
+  
+  /* Adjust the iframe so it's rendered in the outer-width and outer-height of it's parent */
+.aspect-ratio iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}

@@ -7,8 +7,9 @@
   <meta name="description" content="">
   <meta name="author" content="Eventurely">
   <meta name="generator" content="Jekyll v4.0.1">
-  <link rel="icon" href="assets/images/e-logo.png">
+  <link rel="icon" href="assets/images/eventurely.png">
   <title>Eventurely</title>
+  <link rel="stylesheet" href="https://use.typekit.net/afn0hye.css">
 
   <!--<link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">-->
 
@@ -36,13 +37,17 @@
   <link href="assets/dist/custom_css/custom.css" rel="stylesheet">
 
   <!--Load data-->
-  <script src="assets/dist/js/get_data.js"></script>
+  <!-- <script src="assets/dist/js/get_data.js"></script> -->
+  <script src="assets/dist/js/pdf-viewer-style.js"></script>
 </head>
 
 <body>
   <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top navy-background">
-      <a class="navbar-brand brush-font" href="index.html">Eventurely</a>
+      <a class="navbar-brand brush-font" href="index.html">
+        <img class="header-logo" src="assets/images/eventurely.png">
+        eventurely
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
         aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -55,12 +60,10 @@
           <li class="nav-item small-pad-left">
             <a class="nav-link" href="contact.html">Contact</a>
           </li>
+          <li class="nav-item small-pad-left">
+            <a class="btn btn-md btn-primary" href="download.html" role="button">Download</a>
+          </li>
         </ul>
-        <!--<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        <form class="form-inline mt-2 mt-md-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>-->
       </div>
     </nav>
   </header>
@@ -81,7 +84,7 @@
             <div class="carousel-caption text-border">
               <h1>All Events. On One Device.</h1>
               <p>Serving individuals and organizations with a unified scheduling and calendar app.</p>
-              <p><a class="btn btn-lg btn-primary" href="#app-features" role="button">Learn More</a></p>
+              <p><a class="btn btn-lg btn-primary color" href="#app-features" role="button">Learn More</a></p>
             </div>
           </div>
         </div>
@@ -119,13 +122,13 @@
     </div>
 
     <div class="main-content">
-        <div class="side-container">
+      <!-- <div class="side-container">
             <div class="updates-blog">
                 <div class="blog-title"><h1>Updates</h1></div>
                 <div class="scrolling-wrapper" id="instafeed">
 
-                </div>
-                <!-- <div class="scrolling-wrapper" id="blog">
+                </div> -->
+      <!-- <div class="scrolling-wrapper" id="blog">
                              <div class="blog-card mb-3 blog-card-grey">
                                   <div class="card-inline">
                                       <div class="card-header">Header</div>
@@ -136,9 +139,9 @@
                                   </div>
                               </div>
                 </div> -->
-            </div>
+      <!-- </div>
 
-        </div>
+        </div> -->
       <div class="marketing-content">
 
 
@@ -147,82 +150,54 @@
         <!-- Wrap the rest of the page in another container to center all the content. -->
 
         <div class="container marketing">
+          <div class="row featurette">
+            <h2 style="font-size: 3rem; margin-bottom: 1rem;">Welcome to eventurely!</h2>
+            <p>
+              Eventurely is an app centered on making opportunity accessible to all students through community
+              development. Eventurely’s goal for its users is for them to #explore, #engage, and #empower themselves and
+              their communities! Stay tuned for more information and how you can experience eventurely!
+            </p>
+          </div>
+
+          <hr class="featurette-divider">
 
           <!-- START THE FEATURETTES -->
-
-          <div class="row featurette">
-            <div class="col-md-5">
-              <h2 class="featurette-heading">Personalize your experience</h2>
-              <p class="lead">Log in and events will be catered to your interests</p>
-            </div>
-            <div class="col-md-7">
-              <div class="iphone-body">
-                <div class="iphone">
-                  <div class="screen"></div>
-                  <div class="home iphone-button" title="Home"></div>
-                  <span class="speaker" title="Speaker"></span>
-                  <span class="camera" title="Camera"></span>
-                  <span class="proximity" title="Proximity Sensor"></span>
-
-                  <div class="silence iphone-button" title="Silence Switch"></div>
-                  <div class="volume-up iphone-button" title="Volume Up"></div>
-                  <div class="volume-down iphone-button" title="Volume Down"></div>
-                  <div class="sleep iphone-button" title="Sleep"></div>
-                </div>
-              </div>
-            </div>
+          <div class="row featurette aspect-ratio">
+            <iframe src="https://drive.google.com/file/d/10jTvfFPJZLiT90d6NOty5PpTFoxaFTzT/preview" width="550"
+              height="275" frameborder="0">
+            </iframe>
           </div>
 
           <hr class="featurette-divider">
 
-          <div class="row featurette">
-            <div class="col-md-5 order-md-2">
-              <h2 class="featurette-heading">View your calendar</h2>
-              <p class="lead">Allowing individuals to prioritize and make the most out of their time.</p>
-            </div>
-            <div class="col-md-7 order-md-1">
-              <div class="iphone-body">
-                <div class="iphone">
-                  <div class="screen"></div>
-                  <div class="home iphone-button" title="Home"></div>
-                  <span class="speaker" title="Speaker"></span>
-                  <span class="camera" title="Camera"></span>
-                  <span class="proximity" title="Proximity Sensor"></span>
-
-                  <div class="silence iphone-button" title="Silence Switch"></div>
-                  <div class="volume-up iphone-button" title="Volume Up"></div>
-                  <div class="volume-down iphone-button" title="Volume Down"></div>
-                  <div class="sleep iphone-button" title="Sleep"></div>
-                </div>
-              </div>
-            </div>
+          <div class="row featurette image-holder">
+            <img src="assets/images/explore_communities.png" alt="Explore" />
           </div>
 
           <hr class="featurette-divider">
 
-          <div class="row featurette">
-            <div class="col-md-5">
-              <h2 class="featurette-heading">Spread the word.</h2>
-              <p class="lead">Allowing for content to reach those who would be most interested in it.</p>
-            </div>
-            <div class="col-md-7 order-md-1">
-              <div class="iphone-body">
-                <div class="iphone">
-                  <div class="screen"></div>
-                  <div class="home iphone-button" title="Home"></div>
-                  <span class="speaker" title="Speaker"></span>
-                  <span class="camera" title="Camera"></span>
-                  <span class="proximity" title="Proximity Sensor"></span>
-
-                  <div class="silence iphone-button" title="Silence Switch"></div>
-                  <div class="volume-up iphone-button" title="Volume Up"></div>
-                  <div class="volume-down iphone-button" title="Volume Down"></div>
-                  <div class="sleep iphone-button" title="Sleep"></div>
-                </div>
-              </div>
-            </div>
+          <div class="row featurette image-holder">
+            <img src="assets/images/engage_authentically.png" alt="Engage" />
           </div>
 
+          <hr class="featurette-divider">
+
+          <div class="row featurette image-holder">
+            <img src="assets/images/empower_connections.png" alt="Engage" />
+          </div>
+
+          <hr class="featurette-divider">
+
+
+          <div class="row featurette">
+            <h1>Here's the facts</h1>
+            <object id="fact-sheet-container" data="assets/pdf/eventurely-fact-sheet.pdf" type="application/pdf">
+              <script>
+                updateStyle();
+              </script>
+              <a id="fact-sheet" href="assets/pdf/eventurely-fact-sheet.pdf">Download fact sheet</a>
+            </object>
+          </div>
           <!-- /END THE FEATURETTES -->
 
         </div><!-- /.container -->
@@ -233,13 +208,13 @@
     <hr class="featurette-divider margins-sides">
 
     <!-- The Token Agent service - make sure to use your own URL here -->
-    <script src='https://eventurely-token-refresh.herokuapp.com/token.js'></script>
+    <!-- <script src='https://eventurely-token-refresh.herokuapp.com/token.js'></script> -->
 
     <!-- The Instafeed.js library (Don't use this URL in production!) -->
-    <script src="assets/dist/js/instafeed.min.js"></script>
+    <!-- <script src="assets/dist/js/instafeed.min.js"></script>
     <script src="assets/dist/js/insta_post.js"></script>
     <script src="assets/dist/js/resize_captions.js"></script>
-    <script src="assets/dist/js/new_blog.js"></script>
+    <script src="assets/dist/js/new_blog.js"></script> -->
     <!-- FOOTER -->
     <footer class="container">
       <p class="float-right"><a href="#">Back to top</a></p>
