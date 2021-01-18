@@ -10,6 +10,16 @@
     --white: #FFFFFF;
 }
 
+.download-button {
+    background-color: var(--lightpurple);
+    color: var(--darkblue) !important;
+    border: none;
+    border-radius: 1rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 3px;
+}
+
 hr {
     border-top: 1px solid var(--offwhite);
 }
